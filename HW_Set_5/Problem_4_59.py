@@ -36,4 +36,4 @@ print("io = " + f"{io * 1e3:.5f}" + " mA")
 v2 = (ia + ib) / (1 + 1/rc + 1/ra + rb/(ra+rc))
 io2 = v2 / rc
 print("v2 = " + f"{v2:.4f}" + " volts")
-print("io2 = " + f"{io2 * 1e3:.8f}" + " mA")
+print("io2 = " + f"{io2 * 1e3:.8f}" + " A")
