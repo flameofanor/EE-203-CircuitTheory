@@ -11,3 +11,8 @@ G = 6.6743 * 10 ** (-11) #m^3 / kg * s^2
 k = 8.988 * 10 ** 9
 
 #problem variables
+
+
+m = 0.4 / 0.025
+print(m)
+print(0.025 * 16)

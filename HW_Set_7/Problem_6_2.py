@@ -19,5 +19,3 @@ x = 9600 - 2400
 v = 0.004 * x
 print(v)
 
-# finish this prob. done with parts a and b
-#next is power delivered to inductor.
