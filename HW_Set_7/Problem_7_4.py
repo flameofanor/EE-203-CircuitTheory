@@ -11,3 +11,9 @@ G = 6.6743 * 10 ** (-11) #m^3 / kg * s^2
 k = 8.988 * 10 ** 9
 
 #problem variables
+
+print((60*20)/80)
+
+
+tau = 0.2 / 20
+print(1/tau)
