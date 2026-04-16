@@ -1,9 +1,11 @@
 import math
 from math import sin, cos, tan, asin, acos, atan
-from math import pow, sqrt
-from math import e
+from math import pow, sqrt, log
+from math import e, pi
 # f"{some_float:.2f}"
 # print("R1 = " + f"{r1:.2f}" + " \u03A9")
+# Omega = \u03A9
+# Micro = \u00B5
 
 #constants
 g = 9.8 #m/s
