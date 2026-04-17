@@ -11,3 +11,15 @@ G = 6.6743 * 10 ** (-11) #m^3 / kg * s^2
 k = 8.988 * 10 ** 9
 
 #problem variables
+
+L = 20e-3
+t = 10e-6
+
+i_initial = 10
+
+U = 0.5 * L * i_initial ** 2
+
+R = -L * log(sqrt(U/L) / 10) / t
+print("R = " + f"{R:.2f}" + " \u03A9")
+
+
