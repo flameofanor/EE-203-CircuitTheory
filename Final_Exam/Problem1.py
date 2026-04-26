@@ -24,6 +24,28 @@ pF to F x * 1e-12
 '''
 
 #problem variables
+r1 = 200
+r2 = 600
+r3 = 400
+r4 = 1000
+L = 100e-3
+C = 400e-9
+
+V1 = -160
+V2 = -60
+
+ri = r1 + r3
 
 
+iL_initial = V1 / (ri + r4)
 
+
+vC_inital = V1 * ri / (ri + r4)
+
+# final state
+R = 1000
+
+Neper_frequency = R / (2 * L)
+Resonant_frequency = 1 / (sqrt(L * C))
+
+print(Neper_frequency ** 2 == Resonant_frequency ** 2) #true, therefore critically damped
