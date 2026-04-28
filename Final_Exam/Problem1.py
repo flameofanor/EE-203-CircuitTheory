@@ -40,12 +40,25 @@ ri = r1 + r3
 iL_initial = V1 / (ri + r4)
 
 
-vC_inital = V1 * ri / (ri + r4)
+vC_inital = V1 * r4 / (ri + r4)
+
+di_dt = 100 / L
 
 # final state
 R = 1000
 
-Neper_frequency = R / (2 * L)
-Resonant_frequency = 1 / (sqrt(L * C))
+Neper_frequency = R / (2 * L) #(alpha)
+Resonant_frequency = 1 / (sqrt(L * C)) #(ohmega not)
 
-print(Neper_frequency ** 2 == Resonant_frequency ** 2) #true, therefore critically damped
+#print(Neper_frequency ** 2 == Resonant_frequency ** 2) #true, therefore critically damped
+
+s = - Neper_frequency
+#print(vC_inital) #-100 volts
+
+print(Neper_frequency)
+#print(di_dt)
+
+D2 = iL_initial
+D1 = di_dt + Neper_frequency * D2
+#print(D1)
+
